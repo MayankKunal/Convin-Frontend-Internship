@@ -1,0 +1,28 @@
+<form className="row g-3" onsubmit={handleSubmit}>
+    <div className="col-md-6">
+      <label for="inputTitle" className="form-label">Title</label>
+      <input type="text" name="name" className="form-control" id="inputTitle" onChange={handleChange}>
+    </div>
+    <div className="col-md-6">
+        <label for="inputlink" className="form-label">Link</label>
+        <input type="text" name="link" className="form-control" id="inputlink" onChange={handleChange}>
+      </div>
+    
+    <div className="col-md-4">
+      <label for="inputState" className="form-label">State</label>
+      <select
+            name="category"
+            id="category-list"
+            onChange={handleChange}
+            id="inputState"
+          >
+            <option value="Entertainment">Entertainment</option>
+            <option value="Music">Music</option>
+            <option value="Education">Education</option>
+            <option value="Sport">Sport</option>
+          </select>
+    </div>
+    <div className="col-12">
+      <button type="submit" classNameName="btn btn-primary">Sign in</button>
+    </div>
+  </form>
