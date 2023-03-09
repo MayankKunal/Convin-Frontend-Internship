@@ -6,7 +6,7 @@ import data from './mock-data.json'
 import { nanoid } from "nanoid";
 export default function App() {
   const LOCAL_STORAGE_KEY="sportList";
-  const [sportList, setSportList] = useState(data);
+  const [sportList, setSportList] = useState(JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) ?? data);
   
   const [selectedCategory, setSelectedCategory] = useState();
   const [addFormData,setAddFormData]=useState(
